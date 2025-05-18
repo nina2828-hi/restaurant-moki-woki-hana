@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Moki Woki - Restaurant Japonais</title>
 
-  <!-- Nouvelle police : Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Police Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #fff8f4;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
@@ -32,7 +33,7 @@
       margin: 0 15px;
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     nav a:hover {
@@ -43,16 +44,21 @@
       width: 100%;
       height: 400px;
       object-fit: cover;
+      display: block;
     }
 
     .content {
-      padding: 30px;
-      text-align: center;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: justify;
     }
 
     .content h1 {
-      font-size: 32px;
+      font-size: 2.5rem;
       color: #6f1b1b;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     .photos {
@@ -67,6 +73,8 @@
       width: 45%;
       border-radius: 10px;
       max-width: 400px;
+      height: auto;
+      display: block;
     }
 
     footer {
@@ -74,21 +82,23 @@
       color: white;
       padding: 20px;
       text-align: center;
+      font-size: 0.9rem;
     }
 
     iframe {
       width: 100%;
-      height: 200px; /* Taille réduite */
+      height: 150px; /* carte encore plus petite */
       border: 0;
       margin-top: 15px;
       border-radius: 8px;
+      display: block;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/logo-moki.png" alt="Logo Moki Woki">
+    <img src="images/logo-moki.png" alt="Logo Moki Woki" />
     <nav>
       <a href="index.html">Accueil</a>
       <a href="menu.html">Menu</a>
@@ -97,19 +107,24 @@
     </nav>
   </header>
 
-  <img src="images/exterieur.jpg" class="hero-image" alt="Restaurant Moki Woki extérieur">
+  <img src="images/exterieur.jpg" class="hero-image" alt="Restaurant Moki Woki extérieur" />
 
   <div class="content">
     <h1>Bienvenue chez Moki Woki</h1>
     <p>
-      Plongez dans l’univers de la cuisine japonaise revisitée avec notre concept unique de woks et mochis à composer soi-même.
-      Chez <strong>Moki Woki</strong>, chaque plat est préparé à la minute avec des produits frais et faits maison.
-      Profitez d’un cadre chaleureux, moderne et convivial pour savourer vos créations.
+      Situé au cœur de Paris, <strong>Moki Woki</strong> est un restaurant japonais moderne qui vous invite à découvrir la richesse de la cuisine asiatique à travers ses woks et mochis faits maison.
+      Notre chef, passionné par les saveurs authentiques et les produits frais, sélectionne avec soin chaque ingrédient pour garantir une expérience culinaire unique.
+      Dans un cadre chaleureux et convivial, vous composez votre plat selon vos envies, en choisissant parmi une variété de bases, protéines, légumes et sauces délicieuses.
+      Nous privilégions la qualité, la fraîcheur et l'authenticité pour satisfaire tous les palais, du plus traditionnel au plus audacieux.
+      Que ce soit pour un déjeuner rapide ou un dîner entre amis, Moki Woki est l’endroit idéal pour savourer des plats savoureux et équilibrés.
+      Notre équipe dévouée vous accueille avec sourire et attention pour rendre votre visite inoubliable.
+      Venez vivre une aventure gustative riche en couleurs et en parfums, à chaque bouchée.
+      Nous vous attendons avec impatience pour partager notre passion de la cuisine japonaise revisitée.
     </p>
 
     <div class="photos">
-      <img src="images/interieur1.jpg" alt="Salle intérieure du restaurant">
-      <img src="images/interieur2.jpg" alt="Décoration japonaise Moki Woki">
+      <img src="images/interieur1.jpg" alt="Salle intérieure du restaurant" />
+      <img src="images/interieur2.jpg" alt="Décoration japonaise Moki Woki" />
     </div>
   </div>
 
@@ -117,14 +132,12 @@
     <p><strong>Moki Woki – Restaurant Japonais</strong></p>
     <p>Adresse : 88 Rue Sakura, 75000 Paris</p>
     <p>Email : contact@moki-woki.fr | Tél : 01 23 45 67 89</p>
-    
-    <!-- Carte Google Maps (petite) -->
-    <iframe 
+
+    <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999842093501!2d2.292292715673621!3d48.858844079287115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdbf93e57a7%3A0x4fef94f8071c9cd1!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1670000000000"
       allowfullscreen=""
-      loading="lazy">
-    </iframe>
+      loading="lazy"
+    ></iframe>
   </footer>
-
 </body>
 </html>
