@@ -1,1 +1,59 @@
+<nav>
+  <ul style="list-style:none; display:flex; gap:20px;">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="galerie.html">À propos</a></li>
+  </ul>
+</nav>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Moki Woki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff7f7;
+      color: #6f1b1b;
+      padding: 2rem;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #6f1b1b;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a62828;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contactez-nous</h1>
+  <form action="https://formspree.io/f/TON_ID_FORM" method="POST">
+    <label>Votre nom</label>
+    <input type="text" name="name" required>
+    
+    <label>Votre email</label>
+    <input type="email" name="email" required>
+    
+    <label>Votre message</label>
+    <textarea name="message" rows="5" required></textarea>
+    
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>
 
