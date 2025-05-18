@@ -441,3 +441,25 @@
 </body>
 </html>
 
+    <div class="section">
+      <h2>Réservation</h2>
+      <p>Réservez votre table en ligne. Nous vous contacterons pour confirmer votre réservation.</p>
+      <form action="https://formspree.io/f/ton-code-ici" method="POST">
+        <label for="nom">Nom complet :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Adresse e-mail :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="date">Date :</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="heure">Heure :</label><br>
+        <input type="time" id="heure" name="heure" required><br><br>
+
+        <label for="personnes">Nombre de personnes :</label><br>
+        <input type="number" id="personnes" name="personnes" min="1" max="20" required><br><br>
+
+        <button type="submit">Réserver</button>
+      </form>
+    </div>
